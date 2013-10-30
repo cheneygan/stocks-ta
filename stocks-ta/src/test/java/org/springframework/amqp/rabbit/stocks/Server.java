@@ -29,7 +29,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Server {
 
 	private ClassPathXmlApplicationContext context;
-	private BlockingQueueConsumer a;
 
 	public static void main(String[] args) {
 		new Server().run();
