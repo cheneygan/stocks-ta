@@ -3,10 +3,10 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.springframework.samples.spring</groupId>
-	<artifactId>stocks-ta</artifactId>
+	<artifactId>trade-client</artifactId>
 	<version>1.0.0.BUILD-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>StocksTa</name>
+	<name>FundsTa</name>
 	<url>http://www.springframework.org</url>
 	<description>
 		<![CDATA[

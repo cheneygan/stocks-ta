@@ -41,7 +41,27 @@ public class TradeRequest {
 
     private String requestId;
     
-    private String id = UUID.randomUUID().toString();
+    private String name;
+    private String cardNo;
+    
+    
+    public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getCardNo() {
+		return cardNo;
+	}
+
+	public void setCardNo(String cardNo) {
+		this.cardNo = cardNo;
+	}
+
+	private String id = UUID.randomUUID().toString();
 
 	public String getTicker() {
 		return ticker;

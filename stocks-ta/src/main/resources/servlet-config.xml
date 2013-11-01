@@ -15,13 +15,13 @@
 		<property name="defaultReplyTo" value="fanout://broadcast.responsesgcm/" />
 	</bean>
 
-	<rabbit:queue id="tradeQueue" />
+	<rabbit:queue id="tradeQueue" name="responsequeue" durable="true"/>
 
-	<rabbit:queue id="marketDataQueue" />
+	<rabbit:queue id="marketDataQueue"  name="mdqueue" durable="true"/>
 
 	<fanout-exchange name="broadcast.responsesgcm" xmlns="http://www.springframework.org/schema/rabbit">
 		<bindings>
-			<!-- Bind a fanout to an anonymous queue unique for this node, then all nodes in a cluster get the same response -->
+			<!-- Bind a fanout to an anonymous queue unique for this node, then all nodes in a cluster get the same response E232334003 -->
 			<binding queue="tradeQueue" />
 		</bindings>
 	</fanout-exchange>

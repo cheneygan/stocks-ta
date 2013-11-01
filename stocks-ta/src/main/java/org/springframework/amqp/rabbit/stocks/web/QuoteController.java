@@ -105,6 +105,8 @@ public class QuoteController {
 	public TradeRequest trade(@ModelAttribute TradeRequest tradeRequest) {
 		String ticker = tradeRequest.getTicker();
 		Long quantity = tradeRequest.getQuantity();
+		String name= tradeRequest.getName();
+		String cardNo= tradeRequest.getCardNo();
 		if (quantity == null || quantity <= 0 || !StringUtils.hasText(ticker)) {
 			// error
 			return tradeRequest;
